@@ -2,7 +2,7 @@
 ### The modbus TTL to RS485 interface used is a XY-017  (RS3485). No flow control needed and 3.3V powersupply
 
 esp32:
-  board: esp32dev
+  board: m5stick-c
   framework:
     type: arduino
 
