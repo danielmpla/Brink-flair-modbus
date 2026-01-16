@@ -4,15 +4,15 @@
 esp32:
   board: m5stick-c
   framework:
-    type: arduino
+    type: esp-idf
 
 # uart for modbus rtu
 uart:
   id: mod_bus
   baud_rate: 19200
   stop_bits: 1
-  tx_pin: GPIO33
-  rx_pin: GPIO32
+  tx_pin: 33
+  rx_pin: 32
   parity: even  
 
 # i2c for extra sensor
