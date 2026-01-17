@@ -2,17 +2,17 @@
 ### The modbus TTL to RS485 interface used is a XY-017  (RS3485). No flow control needed and 3.3V powersupply
 
 esp32:
-  variant: esp32
+  board: m5stick-c
   framework:
-    type: esp-idf
+    type: arduino
 
 # uart for modbus rtu
 uart:
   id: mod_bus
   baud_rate: 19200
   stop_bits: 1
-  tx_pin: GPIO33
-  rx_pin: GPIO32
+  tx_pin: 26
+  rx_pin: 36
   parity: even  
 
 # i2c for extra sensor
